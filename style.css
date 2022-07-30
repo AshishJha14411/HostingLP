@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+body{
+    background-color: #FDFEFF;
+    font-family: 'OpenSans';
+    overflow-x: hidden;
+}
+/* 
+<--- NavBar --->
+ */
+ .logo{
+    transform: scale(.7);
+ }
+.navbar{
+    padding: 2rem 3rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 40rem;
+    padding: 0 2rem 0 0rem;
+}
+.nav-item{
+    font-size: 17px;
+    font-weight: 400;
+    color: gray;
+    font-family: 'OpenSans';
+}
+.nav-item-active{
+    font-weight: 700;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.nav-register{
+    background-color: #fff;
+    border: 2px solid #66C5FF;
+    color: #66C5FF;
+    border-radius: 7px;
+    height: 3rem;
+    width: 9rem;
+}
+
+/* 
+<---Main--->
+ */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+}
+.text-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 7rem;
+}
+.btn{
+    height: 3rem;
+    border-radius: 9px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    width: 10rem;
+    box-shadow: 0px 1px 5px 1px #0576EC;
+    background-image:linear-gradient(#08B7F7, #0576EC);
+}
+.text-div{
+    padding: 1rem 0 1rem 0rem;
+}
+.big-text{
+    font-size: 50px;
+    font-weight: 900;
+    width: 30rem;
+}
+.small-text{
+    color: gray;
+    font-size: 19px;
+    width: 30rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+img[alt=serversvg]{
+    padding-top: 3rem;
+    padding-right: 4rem;
+    transform: scale(2);
+}
+img[alt=testsvg]{
+    transform: scale(2);
+    padding-left: 4rem;
+}
+img[alt=techsup]{
+    transform: scale(9);
+    padding-right: 1.7rem;
+}
+.justtext{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 1rem 0 11rem;
+}
+.justtext .small-text{
+    padding: 2rem 3rem 0 5rem;
+}
+.row1-cards,.row2-cards{
+    margin: 2rem 5rem 1rem 13rem;
+    display: flex;
+}
+img[class=card-image]{
+    transform: scale(1.4);
+}
+.cards{
+    padding-right: 8rem;
+    width: 20rem;
+}
+.small-text16{
+    font-size: 16px;
+    color: gray;
+}
+/* 
+<---Pricing--->
+ */
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0793F1;
+    margin: 2rem -1rem 2rem -1rem;
+}
+
+.packagepricing{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 2rem 2rem 6rem;
+}
+img[alt=right-tick]{
+    transform: scale(.2);
+    position: absolute;
+    margin-top: -2rem;
+}
+.benefitline{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding: -1rem;
+}
+.benefit{
+    padding: 0rem 0 0 5rem ;
+}
+.package{
+    padding-right: 2.5rem;
+    background-color: #fff;
+    margin-left: 4rem;
+    width: 20rem;
+    border-radius: 17px;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.package-heading{
+    padding: 0rem 2rem 1rem 3rem;
+}
+.package-head{
+    font-size: 28px;
+}
+.pricediv{
+    padding: 0rem 0 0 5rem
+}
+.price span{
+    color: gray;
+    padding-left: -1rem;
+}
+.cancel{
+    padding-left: 1.5rem;
+    color: gray;
+}
+.head-black{
+    width: 17.5rem;
+    border-radius: 17px;
+    background-color: #353535;
+    color: rgb(218, 218, 218);
+}
+.pricing-head{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.customer-love{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+}
+.cards-love{
+    display: flex;
+    justify-content: space-around;
+
+    width: 80%;
+}
+.card{
+    background-color: #F3F4F5;
+    padding: 1rem 4rem 1rem 4rem;
+    margin-bottom: 4rem;
+    margin-left: 5rem;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 7px;
+}
+.card-img-text{
+    display: flex;
+    justify-content: flex-start;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.active-card-love{
+    background-color: #fff;
+}
+img[alt=profile-pic]{
+    width: 4rem;
+    height: 4rem;
+    padding: 1.7rem 1rem 1rem 1rem;
+}
+
+.name{
+    padding-top: 2rem;
+    font-weight: 900;
+}
+.com-position{
+    font-weight: 300;
+    margin-top: -0.4rem;
+}
+.customer-love .big-text{
+    text-align: center;
+    width: 90%;
+}
+.below-big-text{
+    text-align: center;
+    padding-left: 20rem;
+    width: 40%;
+    margin-top: -1rem;
+}
+
+.worrying{
+    background-image: url(/assets/footer-bg.svg);
+    margin: 1rem -1rem 1rem -1rem;
+    display: flex;
+    justify-content: space-around;
+    height: 20rem;
+}
+.worrying-textdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -8rem;
+    margin-top: -2rem;
+}
+.worrying-textdiv .big-text{
+    color: white;
+}
+.worrying-textdiv p{
+    color: white;
+    width: 30rem;
+    margin-top: -3rem;
+}
+.worrying .nav-register{
+    margin-top: 8.5rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: 700;
+}
+/* 
+<---Footer--->
+ */
+
+ footer{
+    display: flex;
+    justify-content: space-around;
+ }
+
+.footer-logo p{
+    width: 25rem;
+}
+.footer-head{
+    padding-left: 2.3rem;
+    font-size: 20px;
+    color: rgb(43, 41, 41);
+}
+.social-text{
+    font-size: 20px;
+}
+
+.footerlist .footer-item{
+    padding-top: 1rem;
+    color: gray;
+}
+.icons img{
+    transform: scale(1.7);
+    padding: .4rem;
+}
