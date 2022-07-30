@@ -6,7 +6,7 @@ This is a sample page. The website focuses on implementing the basics of HTML an
 4 hours and 30 mins
 
 ## Learned 
-- More on creating shapes
+- More on Positioning and Margins
 
 ### The deployed Version Link
 
