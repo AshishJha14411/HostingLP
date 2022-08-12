@@ -76,6 +76,8 @@ li{
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 7rem;
+    width: 95rem;
+    margin-left: -8rem;
 }
 .btn{
     height: 3rem;
@@ -140,8 +142,8 @@ img[class=card-image]{
     transform: scale(1.4);
 }
 .cards{
-    padding-right: 8rem;
-    width: 20rem;
+    margin-right: 2rem;
+    width: 30%;
 }
 .small-text16{
     font-size: 16px;
@@ -156,13 +158,15 @@ img[class=card-image]{
     flex-direction: column;
     justify-content: space-around;
     background-color: #0793F1;
+    width: 100rem;
+    padding-left: 6rem;
     margin: 2rem -1rem 2rem -1rem;
 }
 
 .packagepricing{
     display: flex;
     justify-content: flex-start;
-    padding: 2rem 2rem 2rem 6rem;
+    padding: 2rem 2rem 2rem 0rem;
 }
 img[alt=right-tick]{
     transform: scale(.2);
@@ -285,6 +289,7 @@ img[alt=profile-pic]{
     display: flex;
     justify-content: space-around;
     height: 20rem;
+    width: 110rem;
 }
 .worrying-textdiv{
     display: flex;
@@ -338,8 +343,10 @@ img[alt=profile-pic]{
     padding: .4rem;
 }
 
-@media (max-width: 575.98px){
-    
+@media (max-width: 575px){
+    header{
+        width: 90rem;
+    }
     .navbar{
         flex-direction: column;
     }
@@ -348,31 +355,37 @@ img[alt=profile-pic]{
         justify-content: center;
     }
 
-    .nav-items{
+    .nav-menu{
         flex-direction: column;
         align-items: center;
         margin-bottom: 1rem;
-        height: 12rem;
+    }
+    .nav-items{
+        width: 70%;
+        margin-left: 0;
     }
     .nav-item a {
         margin-bottom: 1rem;
-        margin-right: 15rem;
+        font-size: 2rem;
     }
     .nav-menu .nav-register{
-        margin-left: -3rem;
-        margin-top: 1rem;
-
+        width: 20rem;
+        font-size: 2rem;
     }
-  .main{
-    margin-right: 10rem;
-  }
+    .main{
+        margin-left: 10rem;
+    }
     .text-img-div{
         flex-direction: column;
         padding: 1rem;
-        margin-left: -5rem;
+        margin: 8rem 0 14rem 35rem;
+        transform: scale(1.5);
     }
     .big-text{
         font-size: 2rem;
+    }
+    .small-text{
+        font-size: 1.5rem;
     }
     img[alt=serversvg]{
         width: 15rem;
@@ -390,24 +403,24 @@ img[alt=profile-pic]{
         width: 15rem;
     }
     .justtext{
-        padding: 2rem 0 1rem 0rem;
-        flex-wrap: wrap;
-
+        padding: 4rem 0 3rem 0rem;
+        width: 70rem;
     }
     .justtext .big-text{
-        
-        margin-left: -5rem;
+        font-size: 3rem;
     }
     body > div > div.justtext > p{
-        width: 15rem;
         padding-right: 10rem;
+        font-size: 1.5rem;
     }
     .row1-cards{
-        flex-direction: column;
         align-items: center;
+        width: 70rem;
+        margin-left: 0;
     }
     .row2-cards{
-        flex-direction: column;
+        width: 70rem;
+        margin-left: 0;
         align-items: center;
 
     }
@@ -419,7 +432,9 @@ img[alt=profile-pic]{
         margin: 1rem -7rem 1rem -5rem;
     }
     .pricing-head{
-        font-size: 2.5rem;
+        font-size: 5rem;
+        text-align: left;
+        padding-left: 5rem;
     }
     .packagepricing{
         flex-direction: column;
@@ -430,26 +445,24 @@ img[alt=profile-pic]{
         margin-left: 0rem;
     }
     .package{
-        margin-left: -1rem;
-        margin-bottom: 3rem;
+        transform: scale(2);
+        margin: 19rem 0 26rem 35rem;
     }
     .customer-love{
-
-        margin-left: 0rem;
-        width: 30rem;
+        width: 70rem;
     }
     .cards-love{
         flex-direction: column;
-        margin: 1rem -3rem 1rem 5rem;
+        margin: 1rem -3rem 1rem -5rem;
     }
     .below-big-text{
         width: 15rem;
-        margin: 1rem 0 1rem 2rem;
+        margin: 1rem 0 1rem 8rem;
         padding-left: 2rem;
     }
 
     .customer-love .big-text{
-        margin-left: -4rem;
+        margin-left: -14rem;
     }
     .worrying{
         margin-left: -5rem;
@@ -457,12 +470,13 @@ img[alt=profile-pic]{
         padding-bottom: 0;
         flex-wrap: wrap;
         height: 25rem;
-        width: 20rem;
+        width: 70rem;
     }
     .worrying-textdiv{
         width: 10rem;
         margin-left: -4rem;
         margin-bottom: 0;
+        font-size: 1.5rem;
     }
     .worrying-textdiv .big-text{
         width: 15rem;
@@ -477,7 +491,8 @@ img[alt=profile-pic]{
     }
     footer{
         flex-direction: column;
-        margin-left: 12rem;
+        margin-left: 32rem;
+        font-size: 2rem;
     }
     img[alt=footer-logo]{
         margin-left: 4rem;
@@ -490,38 +505,58 @@ img[alt=profile-pic]{
     }
 }
 
-@media (max-width: 769px){
+@media (min-width: 576px) and (max-width: 769px){
     .navbar{
         flex-direction: column;
+        align-items: center;
+        width: 80rem;
     }
     .logo{
         display: flex;
         justify-content: center;
+        transform: scale(1.5);
+        margin-left: 4rem;
     }
-    .nav-menu{
-        margin-left: 13rem;
+    .nav-menu{/* 
+        margin-left: 13rem; */
         flex-direction: column;
     }
     .nav-items{
-        margin-left: -11rem;
+        margin-left: 10rem;
+        width: 90rem;
+    }
+    .nav-item a{
+        margin-left: 2rem;
+        font-size: 3rem;
+    }
+    body > header > div > nav > .nav-register{
+        margin-left: 35rem;
+        width: 20rem;
+        height: 5rem;
+        font-size: 2rem;
     }
    
-    .nav-register{
-        margin-left: 4rem;
-        margin-top: -2rem;
-    }
     .main{
-        margin-left: 7rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .text-img-div{
         flex-direction: column;
         padding: 1rem;
+        margin-left: 26rem;
+       
     }
     .big-text{
+        font-size: 4rem;
+        width: 50%;
+    }
+    .small-text{
         font-size: 2rem;
     }
     img[alt=serversvg]{
-        width: 15rem;
+        width: 19rem;
+        margin-bottom: 5rem;
         margin-left: 7rem;
     }
     img[alt=testsvg]{
@@ -536,65 +571,89 @@ img[alt=profile-pic]{
         width: 15rem;
     }
     .justtext{
-        margin: 0;
-        padding: 2rem 0 1rem 4rem;
-        flex-direction: column;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 0 1rem 8rem;
+        width: 70rem; 
+        font-size: 3rem;
     }
     .justtext .small-text{
-        margin-left: 0;
+        font-size: 2rem;
+        margin-left: 6rem;
         padding-left: 0;
     }
     .row1-cards{
-        flex-direction: column;
+        width: 70rem;
+        justify-content: center;
         align-items: center;
+        font-size: 3rem;
     }
     .row2-cards{
-        flex-direction: column;
+        font-size: 3rem;
+        width: 70rem;
+        justify-content: center;
         align-items: center;
 
+    }
+    .small-text16{
+        font-size: 2rem;
     }
     .cards{
         margin-top: 1rem;
         margin-left: 1rem;
     }
     .pricing{
-        margin-left: -9rem;
+        margin-left: 0rem;
+        width: 120rem;
+        height: 180rem;
+        justify-content: space-around;
     }
     .pricing-head{
-        font-size: 2.5rem;
+        font-size: 5rem;
+        margin-top: -25rem;
     }
     .packagepricing{
-        flex-direction: column;
+        flex-direction: row;
+        margin-top: -80rem;
     }
     .pricediv .nav-register{
         margin-left: 0rem;
     }
     .package{
-        margin-left: 8rem;
+        transform: scale(1.6);
+        margin-left: 14rem;
         margin-bottom: 3rem;
     }
     .cards-love{
-        flex-direction: column;
+        width: 90rem;
+        flex-direction: row;
+        margin: 2rem;
     }
     .card{
-        margin: 1rem 3rem 1rem -5rem;
-        width: 15rem;
+        margin: 1rem 3rem 1rem 0rem;
+        width: 55rem;
+        height: 20rem;
+        font-size: 150%;
     }
     .below-big-text{
-        width: 15rem;
-        margin: 1rem 0 1rem 0;
+        width: 50rem;
+        margin: 1rem 0 1rem 4rem;
         padding-left: 0;
     }
 
     .customer-love .big-text{
-        margin-left: -4rem;
+        margin-left: 3rem;
+        width: 50rem;
     }
+
     .worrying{
-        margin-left: -8rem;
+        margin-left: 0rem;
         padding-left: 0;
         padding-bottom: 0;
-        flex-direction: column;
         height: 25rem;
+        width: 120rem;
     }
     .worrying-textdiv{
         margin-left: 5rem;
@@ -608,8 +667,10 @@ img[alt=profile-pic]{
         margin-left: 5rem;
     }
     footer{
-        flex-direction: column;
-        margin-left: 18rem;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70rem;
+        margin-left: 8rem;
     }
     img[alt=footer-logo]{
         margin-left: 4rem;
@@ -626,6 +687,9 @@ img[alt=profile-pic]{
     .navbar{
         justify-content: space-around;
     }
+    .text-img-div{
+        align-self: center;
+    }
     .justtext{
         justify-content: space-around;
     }
@@ -638,11 +702,17 @@ img[alt=profile-pic]{
     .packagepricing{
         justify-content: center;
     }
+    .pricing{
+        width: 190rem;
+    }
     .below-big-text{
         margin-left: 15rem;
     }
     .cards-love{
         margin-left: 10rem;
+    }
+    .worrying{
+        width: 190rem;
     }
    
 }
