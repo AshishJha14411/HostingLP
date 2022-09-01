@@ -15,6 +15,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.fa-bars{
+    color: black;
+    display: none;
+}
 .nav-menu{
     display: flex;
     justify-content: flex-start;
@@ -344,15 +348,25 @@ img[alt=profile-pic]{
 }
 
 @media (max-width: 575px){
+  
     header{
         width: 90rem;
     }
     .navbar{
-        flex-direction: column;
+        margin-bottom: 3rem;
+        justify-content: space-between;
+        width: 100rem;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 3rem;
     }
     .logo{
         display: flex;
         justify-content: center;
+    }
+    img[alt=logo]{
+        width: 15rem;
     }
 
     .nav-menu{
@@ -361,16 +375,12 @@ img[alt=profile-pic]{
         margin-bottom: 1rem;
     }
     .nav-items{
-        width: 70%;
-        margin-left: 0;
-    }
-    .nav-item a {
-        margin-bottom: 1rem;
-        font-size: 2rem;
+        display: none;
     }
     .nav-menu .nav-register{
         width: 20rem;
-        font-size: 2rem;
+        height: 4rem;
+        font-size: 3rem;
     }
     .main{
         margin-left: 10rem;
@@ -385,7 +395,7 @@ img[alt=profile-pic]{
         font-size: 2rem;
     }
     .small-text{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     img[alt=serversvg]{
         width: 15rem;
@@ -411,12 +421,13 @@ img[alt=profile-pic]{
     }
     body > div > div.justtext > p{
         padding-right: 10rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .row1-cards{
         align-items: center;
         width: 70rem;
         margin-left: 0;
+        font-size: 2rem;
     }
     .row2-cards{
         width: 70rem;
@@ -429,12 +440,13 @@ img[alt=profile-pic]{
         margin-left: 1rem;
     }
     .pricing{
-        margin: 1rem -7rem 1rem -5rem;
+        margin: 5rem auto auto -15rem;
+        width: 120rem;
     }
     .pricing-head{
         font-size: 5rem;
         text-align: left;
-        padding-left: 5rem;
+        padding-left: 15rem;
     }
     .packagepricing{
         flex-direction: column;
@@ -507,30 +519,27 @@ img[alt=profile-pic]{
 
 @media (min-width: 576px) and (max-width: 769px){
     .navbar{
-        flex-direction: column;
         align-items: center;
-        width: 80rem;
+        justify-content: space-between;
+        min-width: 100rem;
     }
     .logo{
         display: flex;
         justify-content: center;
-        transform: scale(1.5);
-        margin-left: 4rem;
     }
-    .nav-menu{/* 
-        margin-left: 13rem; */
-        flex-direction: column;
+    .fa-bars{
+        font-size: 30px;
+        display: block;
     }
     .nav-items{
-        margin-left: 10rem;
-        width: 90rem;
+        display: none;
     }
     .nav-item a{
         margin-left: 2rem;
         font-size: 3rem;
     }
     body > header > div > nav > .nav-register{
-        margin-left: 35rem;
+       
         width: 20rem;
         height: 5rem;
         font-size: 2rem;
@@ -606,8 +615,8 @@ img[alt=profile-pic]{
     }
     .pricing{
         margin-left: 0rem;
-        width: 120rem;
-        height: 180rem;
+        width: 100rem;
+        height: 130rem;
         justify-content: space-around;
     }
     .pricing-head{
@@ -623,8 +632,8 @@ img[alt=profile-pic]{
     }
     .package{
         transform: scale(1.6);
-        margin-left: 14rem;
-        margin-bottom: 3rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
     .cards-love{
         width: 90rem;
